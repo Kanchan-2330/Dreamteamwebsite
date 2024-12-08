@@ -1,0 +1,143 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar { background-color: #ffcc00; }
+.navbar-brand { font-weight: bold; color: #3e2723; }
+
+/* Hero section with wallpaper */
+.hero-section {
+    background-image: url('images/biryaniwallpaper.jpeg'); /* Path to your wallpaper image */
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+        padding-top: 100px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 300px;
+        padding-top: 80px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Logo section */
+.logo img {
+    width: 70px; /* Adjust the logo size */
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+/* Testimonials Section */
+#customer-testimonials {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 40px 0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top1,
+.card-img-top2,
+.card-img-top3 {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    max-height: 380px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .card-img-top1,
+    .card-img-top2,
+    .card-img-top3 {
+        max-height: 200px;
+    }
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-style: italic;
+    color: #555;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    #customer-testimonials .row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Navbar Adjustments */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}

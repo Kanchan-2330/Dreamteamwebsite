@@ -4,29 +4,56 @@ body {
     margin: 0;
     padding: 0;
 }
-.navbar { background-color: #ffcc00; }
-.navbar-brand { font-weight: bold; color: #3e2723; }
+
+.navbar {
+    background-color: #ffcc00;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #3e2723;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border-color: #3e2723;
+}
+
+.navbar-toggler-icon {
+    color: #3e2723;
+}
 
 /* Hero section with wallpaper */
 .hero-section {
-    background-image: url('images/biryaniwallpaper.jpeg'); /* Path to your wallpaper image */
+    background-image: url('images/biryaniwallpaper.jpeg');
+    /* Path to your wallpaper image */
     background-position: center;
     background-size: cover;
     height: 650px;
-    color: white;
-    text-align: center;
-    padding-top: 150px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
     .hero-section {
         height: 400px;
-        padding-top: 100px;
     }
-    h1 {
+
+    .hero-section h1 {
         font-size: 2.5em;
     }
-    p {
+
+    .hero-section p {
         font-size: 1.2em;
     }
 }
@@ -34,28 +61,21 @@ body {
 @media (max-width: 576px) {
     .hero-section {
         height: 300px;
-        padding-top: 80px;
     }
-    h1 {
+
+    .hero-section h1 {
         font-size: 2em;
     }
-    p {
+
+    .hero-section p {
         font-size: 1em;
     }
 }
 
-/* Logo section */
-.logo img {
-    width: 70px; /* Adjust the logo size */
-    display: block;
-    margin: 0 auto;
-    padding: 20px 0;
-    border-radius: 5px;
-}
-
 /* Testimonials Section */
 #customer-testimonials {
-    background-color: #f9f9f9; /* Light background for the section */
+    background-color: #f9f9f9;
+    /* Light background for the section */
     padding: 40px 0;
 }
 
@@ -71,21 +91,13 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-img-top1,
-.card-img-top2,
-.card-img-top3 {
+.card-img-top {
     border-radius: 10px 10px 0 0;
     object-fit: cover;
-    max-height: 380px;
+    width: 100%;
     height: auto;
-}
-
-@media (max-width: 768px) {
-    .card-img-top1,
-    .card-img-top2,
-    .card-img-top3 {
-        max-height: 200px;
-    }
+    max-height: 380px;
+    /* Ensure full image display */
 }
 
 .card-body {
@@ -108,14 +120,6 @@ body {
     color: #777;
 }
 
-@media (max-width: 768px) {
-    #customer-testimonials .row {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
 /* Footer Section */
 footer {
     background-color: #3e2723;
@@ -136,6 +140,7 @@ footer {
     .navbar-brand {
         font-size: 1.2rem;
     }
+
     .navbar-nav .nav-link {
         font-size: 0.9rem;
         padding: 5px;
